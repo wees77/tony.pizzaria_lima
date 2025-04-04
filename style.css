@@ -8,6 +8,29 @@ a{
     text-decoration: none;
     color: inherit
 }
+
 ul,il,ol{
     list-style: none;
+}
+
+header{
+    position: fixed;
+    background-color: brown;
+    height: 60px;
+    width: calc(100% - 160px);
+    top: 60px;
+}
+
+body{
+    padding: 0 80px;
+    
+}
+
+main{
+    background-color: aquamarine;
+    height: 500px;
+}
+footer{
+    background-color: blueviolet;
+    height: 526px;
 }
