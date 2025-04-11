@@ -86,7 +86,103 @@ section{
     background-image: url(./imagens/triangulos.svg);
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: contain;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
 }
+
+.slogan{
+    position: relative;
+    bottom: 90px;
+    width: 560px;
+    font-size: 4rem;
+    background-color: li;
+    font-weight: 400;
+}
+
+.slogan span{
+    color: var(--primary-color);
+}
+
+.container-slogan{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-style: italic;
+    gap: 64px;
+}
+
+.container-pizzas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.pizza{
+    position: relative;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+
+
+}
+
+.add-pizza{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    border: 3px solid white;
+    color: white;
+    font-size: 2rem;
+    display: grid;
+    position: absolute;
+    place-content: center;
+    top: 0px;
+    right: 0px;
+    transition: .5s;
+    opacity: 0; 
+    z-index: 9;
+}
+
+.pizza:hover .add-pizza{
+    opacity: 1;
+}
+
+.container-info{
+    height: 36px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: -36;
+    border-radius: 0 0 12px 12px;
+    opacity: 60%;
+    transition: .5s;
+}
+
+.container-info p:nth-of-type(1){
+    font-size: 12px;
+    width: 102px;
+    color: white;
+}
+
+.container-info span:nth-last-of-type(2){
+    width: 57px;
+    height: 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.pizza:hover .container-info{
+    bottom: 0;
+}
+
+.pizza:hover{
+
+}
+
 .cardapio{
     background-color: aqua;
 }
