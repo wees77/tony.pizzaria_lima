@@ -1,6 +1,8 @@
 :root{
     --primary-color: #f07807;
     --secundary-color: #f7e5d8;
+    --default-shadow: 0 4px 8px #0005;
+    --default-padding: 0 80px;
 }
 *{
     padding: 0;
@@ -13,21 +15,22 @@ a{
     color: inherit
 }
 
-ul,il,ol{
+menu,li,ol{
     list-style: none;
 }
 
 header{
     position: fixed;
     height: 60px;
-    width: calc(100% - 160px);
+    width: 100vw;
     top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--default-padding);
 }
 
-header ul{
+header menu{
     display: flex;
     color: black;
     justify-content: space-between;
@@ -43,8 +46,8 @@ header li{
 }
 
 header li:hover{
-    background-color: #fbddc1;
-    box-shadow: 0 4px 8px #0005;
+    background-color: var(--secundary-color);
+    box-shadow: var(--default-shadow);
 }
 
 .login{
@@ -53,12 +56,11 @@ header li:hover{
     border-radius: 12px;
     border: none;
     background-color: var(--secundary-color);
-    box-shadow: 0 4px 8px #0005;
+    box-shadow: var(--default-shadow);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-
+    gap: 8  px;
 }
 
 span{
@@ -68,12 +70,31 @@ span{
 body{
     background-color: #fbf2e8;
     font-family: "Poppins", sans-serif;
-    padding: 0 80px;
 }
 
 main{
-    height: 500px;
+    
 }
+
+section{
+    height: 100vh;
+    padding: var(--default-padding);
+}
+
+.home{
+    background-color: var(--secundary-color);
+    background-image: url(./imagens/triangulos.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.cardapio{
+    background-color: aqua;
+}
+
+.servicos{
+    background-color: #f07807;
+}
+
 footer{
     height: 526px;
 }
