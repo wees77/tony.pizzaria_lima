@@ -456,8 +456,4 @@ footer {
     .contato:nth-child(2) {
         display: none;
     }
-
-    .copy-right {
-        margin-bottom: 64px;
-    }
 }
